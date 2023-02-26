@@ -1,0 +1,77 @@
+
+/* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_flexbox  Este sitio sirvió para orientar como hacer las cajas flexibles y los elementos*/
+
+
+/* Estilo del encabezado */
+header {
+    background-color: rgb(115, 101, 186);
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+  }
+
+  .curriculum{
+    font-weight: bold;
+    color: darkgreen;
+  }
+
+  #actitud{
+    font-weight: bold;
+    color: blue;
+  }
+  
+  /* Contenedor de caja flexible */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Caja Lateral izquierda.Ingreso una foto */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: blue;
+  }
+  
+  /* Caja lateral derecha. Estilo del contenido */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #a7cfd8;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  /* Estilo al pie de la pagina */
+  footer {
+    background-color: rgb(125, 199, 181);
+    padding: 10px;
+    text-align: center;
+    color: rgb(11, 11, 11);
+    font-weight: bold;
+  }
+  
+  /* Diseño receptivo */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    } 
+  } 
+
+  <script>
+       function myFunction(0,0,3) /** agregué (0,0,3) para que funcione boton*/
+         { 
+       let x = document.getElementById("ver");
+         }
+  </script> 
+
+
+  
